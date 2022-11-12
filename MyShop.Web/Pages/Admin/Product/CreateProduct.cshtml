@@ -33,7 +33,17 @@
                         <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
                         <span asp-validation-for="Product.ProductName" class="text-danger"></span>
                     </div>
+                    <div class="form-group has-feedback">
+                        <input asp-for="Product.Code" type="text" class="form-control has-feedback-left" required="" placeholder="کد کالا">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+                    </div>
 
+                    <div class="form-group has-feedback">
+                        <input asp-for="Product.Brand" type="text" class="form-control has-feedback-left" required="" placeholder="برند">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+                    </div>
                     <div class="form-group has-feedback">
                         <textarea asp-for="Product.Description" type="text" class="form-control has-feedback-left" required="" placeholder="شرح "></textarea>
                         @*<textarea id="textarea" required="required" placeholder="آدرس " name="textarea" class="form-control col-md-7 col-xs-12"></textarea>*@
