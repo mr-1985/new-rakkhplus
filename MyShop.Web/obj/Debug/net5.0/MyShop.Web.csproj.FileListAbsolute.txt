@@ -199,3 +199,7 @@ C:\Users\mohsen\Source\Repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\MyShop.Web.
 C:\Users\mohsen\Source\Repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\MyShop.Web.genruntimeconfig.cache
 C:\Users\mohsen\Source\Repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\ref\MyShop.Web.dll
 C:\Users\mohsen\source\repos\rakhshplus1\MyShop.Web\bin\Debug\net5.0\ref\MyShop.Web.dll
+C:\Users\mohsen\source\repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\Razor\Pages\Admin\Factor\Index.cshtml.g.cs
+C:\Users\mohsen\source\repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\Razor\Pages\Admin\Factor\CreateFactor.cshtml.g.cs
+C:\Users\mohsen\source\repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\Razor\Pages\Admin\Setting\Index.cshtml.g.cs
+C:\Users\mohsen\source\repos\rakhshplus1\MyShop.Web\obj\Debug\net5.0\Razor\Pages\Admin\Setting\CreateSetting.cshtml.g.cs

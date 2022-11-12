@@ -1,0 +1,83 @@
+﻿@page
+@model MyShop.Web.Pages.Admin.Factor.CreateFactorModel
+@{
+      ViewData["Title"] = "ایجاد رسید کالا";
+    Layout = "Shared/_AdminLayout";
+}
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>
+           ایجاد رسید کالا
+        </h2>
+        <ul class="nav navbar-right panel_toolbox">
+            <li>
+                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+
+            <li>
+                <a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <form method="post" enctype="multipart/form-data">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                    <div class="form-group has-feedback">
+                        <input  type="text" class="form-control has-feedback-left" required="" placeholder="کد کالا">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span  class="text-danger"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        @*<input  type="text" class="form-control has-feedback-left" required="" placeholder="تاریخ خرید">*@
+                        <label>
+                            تاریخ خرید :
+                        </label>
+                        <input id="buyDate" name="buyDate">
+                        @*<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>*@
+                        <span  class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <input  type="text" class="form-control has-feedback-left" required="" placeholder="تعداد خرید">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span  class="text-danger"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        @*<textarea  type="text" class="form-control has-feedback-left" required="" placeholder="مبلغ خرید "></textarea>*@
+                        @*<textarea id="textarea" required="required" placeholder="آدرس " name="textarea" class="form-control col-md-7 col-xs-12"></textarea>*@
+                        <input  type="text" class="form-control has-feedback-left" required="" placeholder="مبلغ خرید">
+                        <span class="fa fa-info form-control-feedback left" aria-hidden="true"></span>
+                        <span  class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-9 col-sm-9 col-xs-12 ">
+                    <a asp-page="Index" class="btn btn-primary">انصراف</a>
+                    <button type="submit" class="btn btn-success">ثبت</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<link href="/AdminContent/kendoui/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="/AdminContent/kendoui/styles/kendo.default.min.css" rel="stylesheet" />
+@section Scripts{
+
+<script src="/AdminContent/jquery/jquery.min.js"></script>
+<script src="/AdminContent/kendoui/js/kendo.all.min.js"></script>
+
+<script>
+   
+    $("#buyDate").kendoDateTimePicker(
+        {
+            format: "yyyy/MM/dd hh:mm:ss"
+        });
+</script>
+}

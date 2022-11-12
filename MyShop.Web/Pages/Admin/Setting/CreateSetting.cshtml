@@ -1,0 +1,73 @@
+﻿@page
+@model MyShop.Web.Pages.Admin.Setting.CreateSettingModel
+@{
+     ViewData["Title"] = "تنظیمات جدید";
+    Layout = "Shared/_AdminLayout";
+}
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>
+            اطلاعات کالا
+
+        </h2>
+        <ul class="nav navbar-right panel_toolbox">
+            <li>
+                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+
+            <li>
+                <a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <form method="post" enctype="multipart/form-data">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                    <div class="form-group has-feedback">
+                        <input asp-for="Setting.ShopPercent" type="text" class="form-control has-feedback-left" required="" placeholder="درصد فروشگاه">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Setting.ShopPercent" class="text-danger"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input asp-for="Setting.ShopPrice" type="text" class="form-control has-feedback-left" required="" placeholder="قیمت فروشگاه">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Setting.ShopPrice" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <input asp-for="Setting.PaymentPercent" type="text" class="form-control has-feedback-left" required="" placeholder="درصد کارمزد تعداد اقساط">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Setting.PaymentPercent" class="text-danger"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input asp-for="Setting.PricePercent" type="text" class="form-control has-feedback-left" required="" placeholder="درصد مبلغ تسهیلات">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Setting.PricePercent" class="text-danger"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input asp-for="Setting.BankPercent" type="text" class="form-control has-feedback-left" required="" placeholder="درصد کارمزد بانک">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Setting.BankPercent" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group has-feedback">
+                        <input asp-for="Setting.OperativePercent" type="text" class="form-control has-feedback-left" required="" placeholder="درصد کارمزد تعاونی">
+                        <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                        <span asp-validation-for="Setting.OperativePercent" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-9 col-sm-9 col-xs-12 ">
+                    <a asp-page="Index" class="btn btn-primary">انصراف</a>
+                    <button type="submit" class="btn btn-success">ثبت</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

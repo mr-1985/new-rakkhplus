@@ -45,6 +45,8 @@ namespace MyShop.DataLayer.Context
 
         #endregion
 
+        public DbSet<setting> Settings { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()

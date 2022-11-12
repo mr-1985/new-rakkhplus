@@ -24,10 +24,6 @@ namespace MyShop.Web.Pages.Admin.Product
 
             if (!ModelState.IsValid)
             {
-
-               
-
-
                 return Page();
             }
 

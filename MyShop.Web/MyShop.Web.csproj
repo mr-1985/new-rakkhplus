@@ -205,7 +205,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Admin\Setting\" />
     <Folder Include="Pages\Admin\Stock\" />
   </ItemGroup>
 
